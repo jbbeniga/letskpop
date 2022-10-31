@@ -1,0 +1,193 @@
+body {
+	color: #000;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-image: url(izonegallery/izbg.jpg);
+	height: 120vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.mainlogo{
+	height:80px;
+	width:80px;
+	margin-left:30px;
+}
+
+nav{
+font-size: 1.5rem;
+overflow: hidden;
+background-color:#151d2e;
+padding-top:20px;
+padding-bottom:10px;
+}
+
+ul {
+	float:right;
+	list-style-type: none;
+}
+
+ul li {
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #0000;
+	padding: 5px 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid white;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #0a0d14;
+  color: white;
+  font-size: 17px;
+  border: 1px solid white;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #303f61;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.navbar {
+  --b: 0.2em;   /* the thickness of the line */
+  --c: #538ca6; /* the color */
+  
+  color: #FFFF;
+  padding-block: var(--b);
+  background: 
+    linear-gradient(var(--c) 50%,#FFF 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+}
+.navbar:hover {
+  --_p: 100%;
+  --_s: .3s;
+}
+
+.container {
+
+  font-size: 20px;
+  text-shadow: 1px 1px #000000;
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.video {
+	position: absolute;
+	top: 50%;
+	left: 30%;
+}
+
+.release {
+	position: absolute;
+	top: 55%;
+	left: 16px;
+}
+
+p {
+	
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
